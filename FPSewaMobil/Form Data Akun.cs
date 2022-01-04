@@ -132,6 +132,28 @@ namespace FPSewaMobil
         berhenti:
             ;
         }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "" | txtpwd.Text == "")
+            {
+                MessageBox.Show("isi user id yang akan dihapus");
+                goto berhenti;
+            }
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from admin where userid ='" + txtuser.Text + "'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+
+        berhenti:
+            ;
+        }
     }
     }
-}
+    
+

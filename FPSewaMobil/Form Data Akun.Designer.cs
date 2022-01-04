@@ -118,6 +118,7 @@ namespace FPSewaMobil
             this.btndelete.TabIndex = 14;
             this.btndelete.Text = "Delete";
             this.btndelete.UseVisualStyleBackColor = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // Form1
             // 
