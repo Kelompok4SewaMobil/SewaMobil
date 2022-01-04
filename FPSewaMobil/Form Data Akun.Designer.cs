@@ -34,7 +34,7 @@ namespace FPSewaMobil
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvuser = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvuser)).BeginInit();
@@ -87,15 +87,16 @@ namespace FPSewaMobil
             this.dgvuser.Size = new System.Drawing.Size(320, 196);
             this.dgvuser.TabIndex = 6;
             // 
-            // button1
+            // btnsave
             // 
-            this.button1.Location = new System.Drawing.Point(39, 139);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 37);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnsave.Location = new System.Drawing.Point(39, 139);
+            this.btnsave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(65, 37);
+            this.btnsave.TabIndex = 12;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
             // 
             // button2
             // 
@@ -124,7 +125,7 @@ namespace FPSewaMobil
             this.ClientSize = new System.Drawing.Size(423, 471);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtpwd);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.label2);
@@ -146,7 +147,7 @@ namespace FPSewaMobil
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvuser;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }
