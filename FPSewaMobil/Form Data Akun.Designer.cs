@@ -36,7 +36,7 @@ namespace FPSewaMobil
             this.dgvuser = new System.Windows.Forms.DataGridView();
             this.btnsave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvuser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,23 +107,24 @@ namespace FPSewaMobil
             this.button2.TabIndex = 13;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btndelete
             // 
-            this.button3.Location = new System.Drawing.Point(280, 140);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 36);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btndelete.Location = new System.Drawing.Point(280, 140);
+            this.btndelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(75, 36);
+            this.btndelete.TabIndex = 14;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 471);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btndelete);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtpwd);
@@ -149,7 +150,7 @@ namespace FPSewaMobil
         private System.Windows.Forms.DataGridView dgvuser;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btndelete;
     }
 }
 

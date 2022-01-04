@@ -104,5 +104,34 @@ namespace FPSewaMobil
         berhenti:
             ;
         }
+        private void txtpwd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Convert.ToChar(e.KeyChar.ToString().ToLower());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (txtuser.Text == "" | txtpwd.Text == "")
+            {
+                MessageBox.Show("Semua data harus diisi", "PERINGATAN");
+                goto berhenti;
+            }
+            string tekscipher = null;
+            tekscipher = CaesarCipher(txtpwd.Text, 17);
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Update admin set password='" + tekscipher + "'where userid='" + txtuser.Text +"'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+
+        berhenti:
+            ;
+        }
+    }
     }
 }
