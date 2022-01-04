@@ -1,0 +1,10 @@
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\bin\Debug\FPSewaMobil.exe.config
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\bin\Debug\FPSewaMobil.exe
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\bin\Debug\FPSewaMobil.pdb
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.AssemblyReference.cache
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form1.resources
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Properties.Resources.resources
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.GenerateResource.cache
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.exe
+C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.pdb
