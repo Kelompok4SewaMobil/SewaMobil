@@ -83,7 +83,26 @@ namespace FPSewaMobil
 
         private void btnsave_Click(object sender, EventArgs e)
         {
+        if ( txtuser.Text == "" | txtpwd.Text == "")
+            {
+                MessageBox.Show("Semua data harus diisi", "PERINGATAN");
+                goto berhenti;
+            }
+            string tekscipher = null;
+            tekscipher = CaesarCipher(txtpwd.Text, 17);
 
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Insert into admin values ('" + txtuser.Text + "','" + tekscipher + "')";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+
+        berhenti:
+            ;
         }
     }
 }
