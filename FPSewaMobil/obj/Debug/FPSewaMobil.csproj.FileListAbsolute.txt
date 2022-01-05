@@ -8,3 +8,5 @@ C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.G
 C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.CoreCompileInputs.cache
 C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.exe
 C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.pdb
+C:\Users\ACER\source\repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Login.resources
+C:\Users\ACER\source\repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Utama.resources

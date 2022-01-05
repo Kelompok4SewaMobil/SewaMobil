@@ -37,6 +37,7 @@ namespace FPSewaMobil
             this.btnsave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
+            this.kembali = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvuser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,11 +121,22 @@ namespace FPSewaMobil
             this.btndelete.UseVisualStyleBackColor = true;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
+            // kembali
+            // 
+            this.kembali.Location = new System.Drawing.Point(258, 441);
+            this.kembali.Name = "kembali";
+            this.kembali.Size = new System.Drawing.Size(97, 34);
+            this.kembali.TabIndex = 15;
+            this.kembali.Text = "Kembali";
+            this.kembali.UseVisualStyleBackColor = true;
+            this.kembali.Click += new System.EventHandler(this.kembali_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 471);
+            this.ClientSize = new System.Drawing.Size(427, 525);
+            this.Controls.Add(this.kembali);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnsave);
@@ -152,6 +164,7 @@ namespace FPSewaMobil
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btndelete;
+        private System.Windows.Forms.Button kembali;
     }
 }
 

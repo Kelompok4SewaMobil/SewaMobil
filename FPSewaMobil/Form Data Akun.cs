@@ -123,7 +123,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Update login_admin set password='" + tekscipher + "'where userid='" + txtuser.Text +"'";
+            cmd.CommandText = "Update login_admin set password='" + tekscipher + "'where username='" + txtuser.Text +"'";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
@@ -144,7 +144,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from login_admin where userid ='" + txtuser.Text + "'";
+            cmd.CommandText = "delete from login_admin where username ='" + txtuser.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
@@ -152,6 +152,13 @@ namespace FPSewaMobil
 
         berhenti:
             ;
+        }
+
+        private void kembali_Click(object sender, EventArgs e)
+        {
+            Form_Utama frm_menu = new Form_Utama();
+            frm_menu.Show();
+            this.Hide();
         }
     }
     }

@@ -69,20 +69,20 @@ namespace FPSewaMobil
                 tekscipher = CaesarCipher(txtpwd.Text, 17);
 
                 con.Close();
-                SqlCommand cmd = new SqlCommand("select * from admin where userid='" +
+                SqlCommand cmd = new SqlCommand("select * from login_admin where username='" +
                     txtuser.Text + "' and password= '" + tekscipher + "'", con);
                 con.Open();
                 SqlDataReader rd = cmd.ExecuteReader();
                 if (rd.HasRows)
                 {
                     rd.Read();
-                    Form1 frm_menu = new Form1();
+                    Form_Utama frm_menu = new Form_Utama();
                     frm_menu.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("User id atau password tidak valid", "PERINGATAN");
+                    MessageBox.Show("username atau password tidak valid", "PERINGATAN");
                     txtuser.Text = "";
                     txtuser.Focus();
                     txtpwd.Text = "";
@@ -93,16 +93,20 @@ namespace FPSewaMobil
                 ;
             }
 
-            private void txtpwd_KeyPress(object sender, KeyPressEventArgs e)
-            {
-                e.KeyChar = Convert.ToChar(e.KeyChar.ToString().ToLower());
-            }
-
         }
 
         private void txtpwd_TextChanged(object sender, EventArgs e)
         {
 
+        }
+        private void txtpwd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.KeyChar = Convert.ToChar(e.KeyChar.ToString().ToLower());
+        }
+
+        private void keluar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

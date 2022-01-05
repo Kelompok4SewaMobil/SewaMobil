@@ -34,6 +34,7 @@ namespace FPSewaMobil
             this.btnlogin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.keluar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtpwd
@@ -80,11 +81,22 @@ namespace FPSewaMobil
             this.label1.TabIndex = 5;
             this.label1.Text = "Username";
             // 
+            // keluar
+            // 
+            this.keluar.Location = new System.Drawing.Point(91, 150);
+            this.keluar.Name = "keluar";
+            this.keluar.Size = new System.Drawing.Size(125, 36);
+            this.keluar.TabIndex = 10;
+            this.keluar.Text = "KELUAR";
+            this.keluar.UseVisualStyleBackColor = true;
+            this.keluar.Click += new System.EventHandler(this.keluar_Click);
+            // 
             // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(374, 228);
+            this.Controls.Add(this.keluar);
             this.Controls.Add(this.txtpwd);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.btnlogin);
@@ -104,5 +116,6 @@ namespace FPSewaMobil
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button keluar;
     }
 }
