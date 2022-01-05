@@ -37,7 +37,6 @@ namespace FPSewaMobil
             this.btnsave = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvuser)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,21 +120,11 @@ namespace FPSewaMobil
             this.btndelete.UseVisualStyleBackColor = true;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(135, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 17);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "aaaaaaa";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 471);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btndelete);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnsave);
@@ -163,7 +152,6 @@ namespace FPSewaMobil
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btndelete;
-        private System.Windows.Forms.Label label3;
     }
 }
 

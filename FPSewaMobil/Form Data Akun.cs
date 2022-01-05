@@ -30,12 +30,12 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from admin";
+            cmd.CommandText = "select * from login_admin";
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "admin");
+            da.Fill(ds, "login_admin");
             dgvuser.DataSource = ds;
-            dgvuser.DataMember = "admin";
+            dgvuser.DataMember = "login_admin";
             dgvuser.ReadOnly = true;
         }
         private string CaesarCipher(string value, int shift)
@@ -95,7 +95,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Insert into admin values ('" + txtuser.Text + "','" + tekscipher + "')";
+            cmd.CommandText = "Insert into login_admin values ('" + txtuser.Text + "','" + tekscipher + "')";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
@@ -123,7 +123,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Update admin set password='" + tekscipher + "'where userid='" + txtuser.Text +"'";
+            cmd.CommandText = "Update login_admin set password='" + tekscipher + "'where userid='" + txtuser.Text +"'";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
@@ -144,7 +144,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "delete from admin where userid ='" + txtuser.Text + "'";
+            cmd.CommandText = "delete from login_admin where userid ='" + txtuser.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
