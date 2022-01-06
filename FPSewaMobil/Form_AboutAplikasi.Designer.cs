@@ -31,6 +31,7 @@ namespace FPSewaMobil
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.aboutkembali1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,11 +53,21 @@ namespace FPSewaMobil
             this.label1.TabIndex = 0;
             this.label1.Text = "Deskripsi Aplikasi";
             // 
+            // aboutkembali1
+            // 
+            this.aboutkembali1.Location = new System.Drawing.Point(373, 399);
+            this.aboutkembali1.Name = "aboutkembali1";
+            this.aboutkembali1.Size = new System.Drawing.Size(75, 23);
+            this.aboutkembali1.TabIndex = 1;
+            this.aboutkembali1.Text = "Kembali";
+            this.aboutkembali1.UseVisualStyleBackColor = true;
+            // 
             // Form_AboutAplikasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(461, 450);
+            this.Controls.Add(this.aboutkembali1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form_AboutAplikasi";
             this.Text = "Form_AboutAplikasi";
@@ -70,5 +81,6 @@ namespace FPSewaMobil
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button aboutkembali1;
     }
 }
