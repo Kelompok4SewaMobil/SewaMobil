@@ -49,7 +49,30 @@ namespace FPSewaMobil
 
         private void btninsert_Click(object sender, EventArgs e)
         {
-            
+            if (txtnomobil.Text == "" | txtnama.Text == "" | txttahun.Text == "")
+            {
+                MessageBox.Show("Semua data harus diisi", "Peringatan");
+                goto berhenti;
+            }
+            int num;
+            bool isNum = int.TryParse(txttahun.Text.ToString(), out num);
+            if (!isNum)
+            {
+                MessageBox.Show("Isi Tahun Mobil", "Peringatan");
+                goto berhenti;
+            }
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = " insert into mobil values ('" + txtnomobil.Text + "','" + txtnama.Text + "'," + int.Parse(txttahun.Text) + ")";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+        berhenti:
+            ;
         }
 
         private void btnupdate_Click(object sender, EventArgs e)
