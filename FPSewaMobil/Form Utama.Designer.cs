@@ -37,7 +37,7 @@ namespace FPSewaMobil
             this.laporan = new System.Windows.Forms.ToolStripButton();
             this.keluar = new System.Windows.Forms.ToolStripButton();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.aplikasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutaplikasi = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,18 +112,18 @@ namespace FPSewaMobil
             // 
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aplikasiToolStripMenuItem});
+            this.aboutaplikasi});
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.Size = new System.Drawing.Size(53, 22);
             this.toolStripDropDownButton1.Text = "About";
             // 
-            // aplikasiToolStripMenuItem
+            // aboutaplikasi
             // 
-            this.aplikasiToolStripMenuItem.Name = "aplikasiToolStripMenuItem";
-            this.aplikasiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aplikasiToolStripMenuItem.Text = "Aplikasi";
+            this.aboutaplikasi.Name = "aboutaplikasi";
+            this.aboutaplikasi.Size = new System.Drawing.Size(180, 22);
+            this.aboutaplikasi.Text = "Aplikasi";
             // 
             // Form_Utama
             // 
@@ -150,6 +150,6 @@ namespace FPSewaMobil
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton laporan;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
-        private System.Windows.Forms.ToolStripMenuItem aplikasiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutaplikasi;
     }
 }
