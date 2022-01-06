@@ -115,6 +115,9 @@
     <EmbeddedResource Include="Form_AboutAplikasi.resx">
       <DependentUpon>Form_AboutAplikasi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_AboutKelompok.resx">
+      <DependentUpon>Form_AboutKelompok.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
