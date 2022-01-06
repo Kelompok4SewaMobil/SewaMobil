@@ -106,7 +106,23 @@ namespace FPSewaMobil
         private void btndelete_Click(object sender, EventArgs e)
         {
 
-       
+            if (txtnomobil.Text == "")
+            {
+                MessageBox.Show("Isi No Mobil Yang Dihapus");
+                goto berhenti;
+            }
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = " delete from mobil where no_mobil = '" + txtnomobil.Text + "'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+
+        berhenti:
+            ;
         }
 
         private void btncari_Click(object sender, EventArgs e)
