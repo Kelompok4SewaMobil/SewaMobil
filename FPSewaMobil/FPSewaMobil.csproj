@@ -89,6 +89,12 @@
     <Compile Include="Form_AboutAplikasi.Designer.cs">
       <DependentUpon>Form_AboutAplikasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_AboutKelompok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AboutKelompok.Designer.cs">
+      <DependentUpon>Form_AboutKelompok.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form Data Akun.resx">
