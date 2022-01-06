@@ -58,6 +58,12 @@
     <Compile Include="Form Data Mobil.Designer.cs">
       <DependentUpon>Form Data Mobil.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form Laporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form Laporan.Designer.cs">
+      <DependentUpon>Form Laporan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form Data Mobil.resx">
       <DependentUpon>Form Data Mobil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form Laporan.resx">
+      <DependentUpon>Form Laporan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form Login.resx">
       <DependentUpon>Form Login.cs</DependentUpon>

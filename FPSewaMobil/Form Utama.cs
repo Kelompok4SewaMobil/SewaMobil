@@ -33,5 +33,10 @@ namespace FPSewaMobil
             frm_menu.Show();
             this.Hide();
         }
+
+        private void laporan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
