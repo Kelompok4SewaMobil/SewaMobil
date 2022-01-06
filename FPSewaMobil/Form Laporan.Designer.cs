@@ -40,8 +40,9 @@ namespace FPSewaMobil
             this.print.Name = "print";
             this.print.Size = new System.Drawing.Size(100, 33);
             this.print.TabIndex = 0;
-            this.print.Text = "Print";
+            this.print.Text = "Tampilkan";
             this.print.UseVisualStyleBackColor = true;
+            this.print.Click += new System.EventHandler(this.print_Click);
             // 
             // dataGridView1
             // 
@@ -60,6 +61,7 @@ namespace FPSewaMobil
             this.Controls.Add(this.print);
             this.Name = "Form_Laporan";
             this.Text = "Form_Laporan";
+            this.Load += new System.EventHandler(this.Form_Laporan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

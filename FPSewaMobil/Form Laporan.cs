@@ -7,14 +7,43 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using DGVPrinterHelper;
 
 namespace FPSewaMobil
 {
     public partial class Form_Laporan : Form
     {
+        SqlConnection koneksi = new SqlConnection
+            (@"Data Source=DESKTOP-UVE2IP6\UMIRFH;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
+
         public Form_Laporan()
         {
             InitializeComponent();
+        }
+
+        private void Form_Laporan_Load(object sender, EventArgs e)
+        {
+            koneksi.Open();
+            SqlDataAdapter dtap = new SqlDataAdapter("select * from transaksimobil", koneksi);
+            DataTable dt = new DataTable();
+            dtap.Fill(dt);
+            dataGridView1.DataSource = dt;
+            koneksi.Close();
+        }
+
+        private void print_Click(object sender, EventArgs e)
+        {
+            DGVPrinter printer = new DGVPrinter();
+            printer.Title = "Laporan Transaksi";
+            printer.SubTitle = string.Format("Tanggal {0}", DateTime.Now.Date.ToString("dd-MMMM-yyyy"));
+            printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
+            printer.PageNumbers = true;
+            printer.PageNumberInHeader = false;
+            printer.PorportionalColumns = true;
+            printer.HeaderCellAlignment = StringAlignment.Near;
+            printer.FooterSpacing = 15;
+            printer.PrintPreviewDataGridView(dataGridView1);
         }
     }
 }
