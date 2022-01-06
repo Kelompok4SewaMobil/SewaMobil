@@ -127,7 +127,16 @@ namespace FPSewaMobil
 
         private void btncari_Click(object sender, EventArgs e)
         {
-           
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from mobil where nama_mobil like '%" + txtcari.Text + "%'";
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "mobil");
+            dgvdatamobil.DataSource = ds;
+            dgvdatamobil.DataMember = "mobil";
+            dgvdatamobil.ReadOnly = true;
         }
     }
 }
