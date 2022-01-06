@@ -61,6 +61,7 @@ namespace FPSewaMobil
             this.kembali.TabIndex = 2;
             this.kembali.Text = "Kembali";
             this.kembali.UseVisualStyleBackColor = true;
+            this.kembali.Click += new System.EventHandler(this.kembali_Click);
             // 
             // Form_Laporan
             // 

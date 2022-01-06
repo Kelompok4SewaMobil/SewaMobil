@@ -25,7 +25,7 @@ namespace FPSewaMobil
         private void Form_Laporan_Load(object sender, EventArgs e)
         {
             koneksi.Open();
-            SqlDataAdapter dtap = new SqlDataAdapter("select * from transaksimobil", koneksi);
+            SqlDataAdapter dtap = new SqlDataAdapter("select * from login_admin", koneksi);
             DataTable dt = new DataTable();
             dtap.Fill(dt);
             dataGridView1.DataSource = dt;
@@ -35,7 +35,7 @@ namespace FPSewaMobil
         private void print_Click(object sender, EventArgs e)
         {
             DGVPrinter printer = new DGVPrinter();
-            printer.Title = "Laporan Transaksi";
+            printer.Title = "Laporan";
             printer.SubTitle = string.Format("Tanggal {0}", DateTime.Now.Date.ToString("dd-MMMM-yyyy"));
             printer.SubTitleFormatFlags = StringFormatFlags.LineLimit | StringFormatFlags.NoClip;
             printer.PageNumbers = true;
@@ -44,6 +44,13 @@ namespace FPSewaMobil
             printer.HeaderCellAlignment = StringAlignment.Near;
             printer.FooterSpacing = 15;
             printer.PrintPreviewDataGridView(dataGridView1);
+        }
+
+        private void kembali_Click(object sender, EventArgs e)
+        {
+            Form_Utama frm_menu = new Form_Utama();
+            frm_menu.Show();
+            this.Hide();
         }
     }
 }
