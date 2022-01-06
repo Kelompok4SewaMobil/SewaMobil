@@ -93,7 +93,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = " update mobil set nama_mobil = '" + txtnama.Text + "', tahun =" + txttahun.Text + "where no_mobil = '" + txtnomobil.Text + "'";
+            cmd.CommandText = " update mobil set nama_mobil = '" + txtnama.Text + "', no_mobil =" + txtnomobil.Text + "where tahun = '" + txttahun.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
