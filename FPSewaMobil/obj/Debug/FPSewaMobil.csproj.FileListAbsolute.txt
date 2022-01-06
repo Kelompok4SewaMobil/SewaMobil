@@ -10,3 +10,17 @@ C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.exe
 C:\Users\ACER\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.pdb
 C:\Users\ACER\source\repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Login.resources
 C:\Users\ACER\source\repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Utama.resources
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\bin\Debug\FPSewaMobil.exe.config
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\bin\Debug\FPSewaMobil.exe
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\bin\Debug\FPSewaMobil.pdb
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form1.resources
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Data_Mobil.resources
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Laporan.resources
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Login.resources
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Form_Utama.resources
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.Properties.Resources.resources
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.exe
+C:\Users\User\Source\Repos\SewaMobil1\FPSewaMobil\obj\Debug\FPSewaMobil.pdb

@@ -43,5 +43,12 @@ namespace FPSewaMobil
         {
 
         }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            Form_Data_Mobil frm_menu = new Form_Data_Mobil();
+            frm_menu.Show();
+            this.Hide();
+        }
     }
 }
