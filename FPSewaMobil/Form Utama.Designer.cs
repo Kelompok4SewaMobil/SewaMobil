@@ -133,6 +133,7 @@ namespace FPSewaMobil
             this.aboutkelompok.Name = "aboutkelompok";
             this.aboutkelompok.Size = new System.Drawing.Size(224, 26);
             this.aboutkelompok.Text = "Kelompok";
+            this.aboutkelompok.Click += new System.EventHandler(this.aboutkelompok_Click);
             // 
             // Form_Utama
             // 

@@ -59,5 +59,12 @@ namespace FPSewaMobil
             frm_menu.Show();
             this.Hide();
         }
+
+        private void aboutkelompok_Click(object sender, EventArgs e)
+        {
+            Form_AboutKelompok frm_menu = new Form_AboutKelompok();
+            frm_menu.Show();
+            this.Hide();
+        }
     }
 }
