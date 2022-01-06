@@ -93,7 +93,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = " update mobil set nama_mobil = '" + txtnama.Text + "', no_mobil =" + txtnomobil.Text + "where tahun = '" + txttahun.Text + "'";
+            cmd.CommandText = " update mobil set nama_mobil = '" + txtnama.Text + "', tahun =" + txttahun.Text + "where no_mobil = '" + txtnomobil.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
@@ -137,6 +137,11 @@ namespace FPSewaMobil
             dgvdatamobil.DataSource = ds;
             dgvdatamobil.DataMember = "mobil";
             dgvdatamobil.ReadOnly = true;
+        }
+
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            showdata();
         }
     }
 }

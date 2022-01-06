@@ -169,6 +169,7 @@ namespace FPSewaMobil
             this.btnreset.TabIndex = 30;
             this.btnreset.Text = "RESET DATA";
             this.btnreset.UseVisualStyleBackColor = true;
+            this.btnreset.Click += new System.EventHandler(this.btnreset_Click);
             // 
             // dgvdatamobil
             // 
