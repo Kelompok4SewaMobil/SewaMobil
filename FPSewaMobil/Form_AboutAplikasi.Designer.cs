@@ -55,12 +55,13 @@ namespace FPSewaMobil
             // 
             // aboutkembali1
             // 
-            this.aboutkembali1.Location = new System.Drawing.Point(373, 399);
+            this.aboutkembali1.Location = new System.Drawing.Point(319, 399);
             this.aboutkembali1.Name = "aboutkembali1";
-            this.aboutkembali1.Size = new System.Drawing.Size(75, 23);
+            this.aboutkembali1.Size = new System.Drawing.Size(129, 39);
             this.aboutkembali1.TabIndex = 1;
             this.aboutkembali1.Text = "Kembali";
             this.aboutkembali1.UseVisualStyleBackColor = true;
+            this.aboutkembali1.Click += new System.EventHandler(this.aboutkembali1_Click);
             // 
             // Form_AboutAplikasi
             // 
