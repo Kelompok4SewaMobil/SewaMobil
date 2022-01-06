@@ -124,6 +124,7 @@ namespace FPSewaMobil
             this.aboutaplikasi.Name = "aboutaplikasi";
             this.aboutaplikasi.Size = new System.Drawing.Size(180, 22);
             this.aboutaplikasi.Text = "Aplikasi";
+            this.aboutaplikasi.Click += new System.EventHandler(this.aboutaplikasi_Click);
             // 
             // Form_Utama
             // 

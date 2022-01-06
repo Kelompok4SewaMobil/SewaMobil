@@ -52,5 +52,12 @@ namespace FPSewaMobil
             frm_menu.Show();
             this.Hide();
         }
+
+        private void aboutaplikasi_Click(object sender, EventArgs e)
+        {
+            Form_AboutAplikasi frm_menu = new Form_AboutAplikasi();
+            frm_menu.Show();
+            this.Hide();
+        }
     }
 }

@@ -38,3 +38,4 @@ C:\Users\ADMIN\Source\Repos\SewaMobil5\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.
 C:\Users\ADMIN\Source\Repos\SewaMobil5\FPSewaMobil\obj\Debug\FPSewaMobil.csproj.CoreCompileInputs.cache
 C:\Users\ADMIN\Source\Repos\SewaMobil5\FPSewaMobil\obj\Debug\FPSewaMobil.exe
 C:\Users\ADMIN\Source\Repos\SewaMobil5\FPSewaMobil\obj\Debug\FPSewaMobil.pdb
+C:\Users\ADMIN\source\repos\SewaMobil5\FPSewaMobil\obj\Debug\FPSewaMobil.Form_AboutAplikasi.resources
