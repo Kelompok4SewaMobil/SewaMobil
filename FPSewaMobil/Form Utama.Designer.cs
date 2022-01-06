@@ -36,6 +36,8 @@ namespace FPSewaMobil
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.laporan = new System.Windows.Forms.ToolStripButton();
             this.keluar = new System.Windows.Forms.ToolStripButton();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.aplikasiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +49,7 @@ namespace FPSewaMobil
             this.toolStripButton3,
             this.toolStripButton2,
             this.laporan,
+            this.toolStripDropDownButton1,
             this.keluar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -81,7 +84,7 @@ namespace FPSewaMobil
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(60, 22);
+            this.toolStripButton2.Size = new System.Drawing.Size(58, 22);
             this.toolStripButton2.Text = "Transaksi";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -105,13 +108,30 @@ namespace FPSewaMobil
             this.keluar.Text = "Keluar";
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
             // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aplikasiToolStripMenuItem});
+            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(53, 22);
+            this.toolStripDropDownButton1.Text = "About";
+            // 
+            // aplikasiToolStripMenuItem
+            // 
+            this.aplikasiToolStripMenuItem.Name = "aplikasiToolStripMenuItem";
+            this.aplikasiToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aplikasiToolStripMenuItem.Text = "Aplikasi";
+            // 
             // Form_Utama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form_Utama";
             this.Text = "Form Utama";
             this.toolStrip1.ResumeLayout(false);
@@ -129,5 +149,7 @@ namespace FPSewaMobil
         private System.Windows.Forms.ToolStripButton keluar;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton laporan;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem aplikasiToolStripMenuItem;
     }
 }
