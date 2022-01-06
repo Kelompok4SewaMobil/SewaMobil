@@ -62,6 +62,7 @@ namespace FPSewaMobil
             this.aboutkembali2.TabIndex = 1;
             this.aboutkembali2.Text = "Kembali";
             this.aboutkembali2.UseVisualStyleBackColor = true;
+            this.aboutkembali2.Click += new System.EventHandler(this.aboutkembali2_Click);
             // 
             // Form_AboutKelompok
             // 

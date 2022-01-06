@@ -16,5 +16,12 @@ namespace FPSewaMobil
         {
             InitializeComponent();
         }
+
+        private void aboutkembali2_Click(object sender, EventArgs e)
+        {
+            Form_Utama frm_menu = new Form_Utama();
+            frm_menu.Show();
+            this.Hide();
+        }
     }
 }
