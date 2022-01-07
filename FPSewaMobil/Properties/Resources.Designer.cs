@@ -73,9 +73,30 @@ namespace FPSewaMobil.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lamborghini_logo {
             get {
                 object obj = ResourceManager.GetObject("Lamborghini-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap prev_desktop_lamborghini_huracan_sterrato_suka_main_kasar_56721_12765_tDTtdPAqXPpFs8oDwbzysZ {
+            get {
+                object obj = ResourceManager.GetObject("prev-desktop_lamborghini-huracan-sterrato-suka-main-kasar-56721_12765_tDTtdPAqXPp" +
+                        "Fs8oDwbzysZ", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

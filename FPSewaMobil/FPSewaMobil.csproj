@@ -147,5 +147,11 @@
   <ItemGroup>
     <None Include="Resources\Lamborghini-logo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prev-desktop_lamborghini-huracan-sterrato-suka-main-kasar-56721_12765_tDTtdPAqXPpFs8oDwbzysZ.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
