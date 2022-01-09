@@ -31,8 +31,6 @@ namespace FPSewaMobil
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Utama));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
@@ -41,6 +39,8 @@ namespace FPSewaMobil
             this.aboutaplikasi = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutkelompok = new System.Windows.Forms.ToolStripMenuItem();
             this.keluar = new System.Windows.Forms.ToolStripButton();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,23 +62,6 @@ namespace FPSewaMobil
             this.toolStrip1.Size = new System.Drawing.Size(922, 34);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(744, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(178, 26);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::FPSewaMobil.Properties.Resources.prev_desktop_lamborghini_huracan_sterrato_suka_main_kasar_56721_12765_tDTtdPAqXPpFs8oDwbzysZ;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(922, 527);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // toolStripButton1
             // 
@@ -155,6 +138,23 @@ namespace FPSewaMobil
             this.keluar.Size = new System.Drawing.Size(64, 29);
             this.keluar.Text = "Keluar";
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(744, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(178, 26);
+            this.dateTimePicker1.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FPSewaMobil.Properties.Resources.prev_desktop_lamborghini_huracan_sterrato_suka_main_kasar_56721_12765_tDTtdPAqXPpFs8oDwbzysZ;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(929, 530);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_Utama
             // 

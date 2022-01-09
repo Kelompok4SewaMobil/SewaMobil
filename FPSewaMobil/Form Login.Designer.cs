@@ -139,6 +139,7 @@ namespace FPSewaMobil
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form_Login";
             this.Text = "Form_Login";
+            this.Load += new System.EventHandler(this.Form_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

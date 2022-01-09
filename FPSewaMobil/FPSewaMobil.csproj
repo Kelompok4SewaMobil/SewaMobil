@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data Pelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data Pelanggan.Designer.cs">
+      <DependentUpon>Data Pelanggan.cs</DependentUpon>
+    </Compile>
     <Compile Include="DGVPrinter.cs" />
     <Compile Include="Form Data Akun.cs">
       <SubType>Form</SubType>
@@ -97,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Data Pelanggan.resx">
+      <DependentUpon>Data Pelanggan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Data Akun.resx">
       <DependentUpon>Form Data Akun.cs</DependentUpon>
     </EmbeddedResource>

@@ -66,5 +66,12 @@ namespace FPSewaMobil
             frm_menu.Show();
             this.Hide();
         }
+
+
+        private void toolStripDataPelanggan_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }

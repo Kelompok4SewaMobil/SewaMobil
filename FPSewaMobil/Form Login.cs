@@ -118,5 +118,10 @@ namespace FPSewaMobil
         {
 
         }
+
+        private void Form_Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
