@@ -16,5 +16,35 @@ namespace FPSewaMobil
         {
             InitializeComponent();
         }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvpenyewa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void textboxid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxnama_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textboxharga_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
