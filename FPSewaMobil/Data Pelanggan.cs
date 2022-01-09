@@ -26,12 +26,12 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select From pelanggan";
+            cmd.CommandText = "Select From penyewa";
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "pelanggan");
+            da.Fill(ds, "penyewa");
             dgvpenyewa.DataSource = ds;
-            dgvpenyewa.datapelanggan = "pelanggan";
+            dgvpenyewa.datapenyewa = "pelanggan";
             DataGridViewCellContextMenuStripNeededEventArgs.ReadOnly = true;
 
         }
@@ -59,9 +59,9 @@ namespace FPSewaMobil
             SqlParameter harga = new SqlParameter("@harga", SqlDbType.VarChar);
 
             //mengisi variable sql parameter dengan nilai textbox
-            idpelanggan.Value = txtnomobil.Text;
-            namaPelanggan.Value = txtnamamobil.Text;
-            harga.Value = txthargasewa.Text;
+            idpelanggan.Value = textboxid.Text;
+            namaPelanggan.Value = textboxnama.Text;
+            harga.Value = textboxharga.Text;
 
             //menambah parameter tadi ke comand yang ada
             cmd.Parameters.Add(idpelanggan);
@@ -75,11 +75,23 @@ namespace FPSewaMobil
             showdata();
             resetdata();
 
-
         }
 
         private void btndelete_Click(object sender, EventArgs e)
         {
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "DELMENU";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter idPenyewa = new SqlParameter("@id", SqlDbType.VarChar);
+
+            idPenyewa.Value = textboxid.Text;
+            cmd.Parameters.Add(idPenyewa);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
 
         }
 
