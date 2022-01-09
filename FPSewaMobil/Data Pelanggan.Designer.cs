@@ -139,6 +139,7 @@ namespace FPSewaMobil
             this.Controls.Add(this.label1);
             this.Name = "Data_Pelanggan";
             this.Text = "Data_Pelanggan";
+            this.Load += new System.EventHandler(this.Data_Pelanggan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvpenyewa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

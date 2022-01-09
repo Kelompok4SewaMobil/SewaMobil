@@ -143,5 +143,10 @@ namespace FPSewaMobil
         {
             showdata();
         }
+
+        private void Form_Data_Mobil_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
