@@ -41,6 +41,7 @@ namespace FPSewaMobil
             this.keluar = new System.Windows.Forms.ToolStripButton();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +53,7 @@ namespace FPSewaMobil
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton3,
+            this.toolStripButton4,
             this.toolStripButton2,
             this.laporan,
             this.toolStripDropDownButton1,
@@ -156,6 +158,15 @@ namespace FPSewaMobil
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(135, 29);
+            this.toolStripButton4.Text = "Data Customer";
+            // 
             // Form_Utama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -189,5 +200,6 @@ namespace FPSewaMobil
         private System.Windows.Forms.ToolStripMenuItem aboutkelompok;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
     }
 }

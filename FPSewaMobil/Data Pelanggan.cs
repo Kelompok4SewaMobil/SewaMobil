@@ -31,8 +31,6 @@ namespace FPSewaMobil
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(ds, "penyewa");
             dgvpenyewa.DataSource = ds;
-            dgvpenyewa.datapenyewa = "pelanggan";
-            DataGridViewCellContextMenuStripNeededEventArgs.ReadOnly = true;
 
         }
 

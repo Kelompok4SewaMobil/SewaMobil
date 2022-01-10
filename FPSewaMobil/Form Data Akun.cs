@@ -18,7 +18,7 @@ namespace FPSewaMobil
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection
-        (@"Data Source=USER-PC;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
+        (@"Data Source=LAPTOP-1NFNB131;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
 
         private void resetdata()
         {
