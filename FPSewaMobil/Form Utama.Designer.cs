@@ -39,7 +39,6 @@ namespace FPSewaMobil
             this.aboutaplikasi = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutkelompok = new System.Windows.Forms.ToolStripMenuItem();
             this.keluar = new System.Windows.Forms.ToolStripButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
@@ -48,7 +47,7 @@ namespace FPSewaMobil
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.SystemColors.Info;
+            this.toolStrip1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
@@ -141,16 +140,9 @@ namespace FPSewaMobil
             this.keluar.Text = "Keluar";
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(744, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(178, 26);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::FPSewaMobil.Properties.Resources.prev_desktop_lamborghini_huracan_sterrato_suka_main_kasar_56721_12765_tDTtdPAqXPpFs8oDwbzysZ;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 32);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(929, 530);
@@ -173,7 +165,6 @@ namespace FPSewaMobil
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(922, 562);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -199,7 +190,6 @@ namespace FPSewaMobil
         private System.Windows.Forms.ToolStripMenuItem aboutaplikasi;
         private System.Windows.Forms.ToolStripMenuItem aboutkelompok;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
     }
 }
