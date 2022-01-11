@@ -106,7 +106,7 @@ namespace FPSewaMobil
             this.btnsave.Name = "btnsave";
             this.btnsave.Size = new System.Drawing.Size(123, 46);
             this.btnsave.TabIndex = 12;
-            this.btnsave.Text = "Simpan";
+            this.btnsave.Text = "SIMPAN";
             this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnsave.UseVisualStyleBackColor = true;
             this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
@@ -118,7 +118,7 @@ namespace FPSewaMobil
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 45);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Edit";
+            this.button2.Text = "EDIT";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -129,21 +129,21 @@ namespace FPSewaMobil
             this.btndelete.Location = new System.Drawing.Point(578, 226);
             this.btndelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(109, 45);
+            this.btndelete.Size = new System.Drawing.Size(121, 45);
             this.btndelete.TabIndex = 14;
-            this.btndelete.Text = "Hapus";
+            this.btndelete.Text = "HAPUS";
             this.btndelete.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btndelete.UseVisualStyleBackColor = true;
             this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // kembali
             // 
-            this.kembali.Location = new System.Drawing.Point(578, 595);
+            this.kembali.Location = new System.Drawing.Point(565, 595);
             this.kembali.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.kembali.Name = "kembali";
-            this.kembali.Size = new System.Drawing.Size(119, 42);
+            this.kembali.Size = new System.Drawing.Size(134, 42);
             this.kembali.TabIndex = 15;
-            this.kembali.Text = "Kembali";
+            this.kembali.Text = "KEMBALI";
             this.kembali.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.kembali.UseVisualStyleBackColor = true;
             this.kembali.Click += new System.EventHandler(this.kembali_Click);
@@ -181,7 +181,7 @@ namespace FPSewaMobil
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(591, 601);
+            this.pictureBox4.Location = new System.Drawing.Point(578, 601);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
