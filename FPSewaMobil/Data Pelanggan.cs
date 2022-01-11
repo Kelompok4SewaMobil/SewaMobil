@@ -84,7 +84,31 @@ namespace FPSewaMobil
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-           
+
+            if (txtid.Text == "" | textboxnama.Text == "" | txtnomorid.Text == "")
+            {
+                MessageBox.Show("Semua Data Harus Diisi", "Peringatan");
+                goto berhenti;
+            }
+            int num;
+            bool isNum = int.TryParse(txtnomorid.Text.ToString(), out num);
+            if (!isNum)
+            {
+                MessageBox.Show("Isi Tahun Mobil", "Peringatan");
+                goto berhenti;
+            }
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = " update penyewa set jenis_id = '" + txtid.Text + "', nama_penyewa =" + textboxnama.Text + "where nomor_id = '" + txtnomorid.Text + "'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+
+        berhenti:
+            ;
         }
 
         private void btndelete_Click_1(object sender, EventArgs e)
