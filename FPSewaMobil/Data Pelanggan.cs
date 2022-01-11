@@ -64,7 +64,31 @@ namespace FPSewaMobil
 
         private void btninsert_Click(object sender, EventArgs e)
         {
-          
+
+            if (txtid.Text == "" | textboxnama.Text == "" | txtnomorid.Text == "")
+            {
+                MessageBox.Show("Semua data harus diisi", "Peringatan");
+                goto berhenti;
+            }
+            int num;
+            bool isNum = int.TryParse(txtnomorid.Text.ToString(), out num);
+            if (!isNum)
+            {
+                MessageBox.Show("Isi Nomor ID", "Peringatan");
+                goto berhenti;
+            }
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = " insert into penyewa values ('" + txtid.Text + "','" + textboxnama.Text + "'," + int.Parse(txtnomorid.Text) + ")";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+        berhenti:;
+
         }
 
         private void toolStripTextBox1_Click(object sender, EventArgs e)
