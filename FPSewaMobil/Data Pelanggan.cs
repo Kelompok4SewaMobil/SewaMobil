@@ -87,7 +87,7 @@ namespace FPSewaMobil
         private void btninsert_Click(object sender, EventArgs e)
         {
 
-            if (txtid.Text == "" | textboxnama.Text == "" | txtnomorid.Text == "")
+            if (textboxnama.Text == "" | txtid.Text == "" | txtnomorid.Text == "")
             {
                 MessageBox.Show("Semua data harus diisi", "Peringatan");
                 goto berhenti;
@@ -104,7 +104,7 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = " insert into penyewa values ('" + txtid.Text + "','" + textboxnama.Text + "'," + int.Parse(txtnomorid.Text) + ")";
+            cmd.CommandText = " insert into penyewa values ('" + textboxnama.Text + "','" + txtid.Text + "'," + int.Parse(txtnomorid.Text) + ")";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
