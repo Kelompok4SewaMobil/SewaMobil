@@ -19,7 +19,7 @@ namespace FPSewaMobil
            
         }
          SqlConnection con = new SqlConnection
-            (@"Data Source=LAPTOP-1NFNB131;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
+            (@"Data Source=LAPTOP-44L09114\ANDRIAN;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
     
 
         private void showdata()
@@ -131,7 +131,7 @@ namespace FPSewaMobil
         private void btnupdate_Click(object sender, EventArgs e)
         {
 
-            if (txtid.Text == "" | textboxnama.Text == "" | txtnomorid.Text == "")
+            if (textboxnama.Text == "" | txtid.Text == "" | txtnomorid.Text == "")
             {
                 MessageBox.Show("Semua Data Harus Diisi", "Peringatan");
                 goto berhenti;
@@ -140,14 +140,14 @@ namespace FPSewaMobil
             bool isNum = int.TryParse(txtnomorid.Text.ToString(), out num);
             if (!isNum)
             {
-                MessageBox.Show("Isi Tahun Mobil", "Peringatan");
+                MessageBox.Show("Isi Nomor ID", "Peringatan");
                 goto berhenti;
             }
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = " update penyewa set jenis_id = '" + txtid.Text + "', nama_penyewa =" + textboxnama.Text + "where nomor_id = '" + txtnomorid.Text + "'";
+            cmd.CommandText = " update penyewa set jenis_id = '" + txtid.Text + "',  nomor_id =" + txtnomorid.Text + " where nomor_id = '" + txtnomorid.Text + "'";
             cmd.ExecuteNonQuery();
             con.Close();
             showdata();
@@ -155,6 +155,7 @@ namespace FPSewaMobil
 
         berhenti:
             ;
+
         }
 
         private void btndelete_Click_1(object sender, EventArgs e)

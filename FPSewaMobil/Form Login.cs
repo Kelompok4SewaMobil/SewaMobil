@@ -18,7 +18,7 @@ namespace FPSewaMobil
             InitializeComponent();
         }
        SqlConnection con = new SqlConnection
-      (@"Data Source=LAPTOP-1NFNB131;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
+      (@"Data Source=LAPTOP-44L09114\ANDRIAN;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
 
         private string CaesarCipher(string value, int shift)
         {
@@ -125,6 +125,11 @@ namespace FPSewaMobil
         }
 
         private void txtuser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }
