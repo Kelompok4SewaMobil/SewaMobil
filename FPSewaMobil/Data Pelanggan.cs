@@ -89,7 +89,23 @@ namespace FPSewaMobil
 
         private void btndelete_Click_1(object sender, EventArgs e)
         {
-            
+            if (txtid.Text == "")
+            {
+                MessageBox.Show("Isi Nama Penyewa Yang Dihapus");
+                goto berhenti;
+            }
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = " delete from penyewa where nama_penyewa = '" + txtid.Text + "'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
+            resetdata();
+
+        berhenti:
+            ;
 
         }
 
