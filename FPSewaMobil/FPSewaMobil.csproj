@@ -165,5 +165,32 @@
   <ItemGroup>
     <None Include="Resources\prev-desktop_lamborghini-huracan-sterrato-suka-main-kasar-56721_12765_tDTtdPAqXPpFs8oDwbzysZ.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\write.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kelompok.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aplikasi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

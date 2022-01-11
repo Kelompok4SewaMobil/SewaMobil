@@ -19,7 +19,7 @@ namespace FPSewaMobil
            
         }
          SqlConnection con = new SqlConnection
-            (@"Data Source=LAPTOP-44L09114\ANDRIAN;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
+            (@"Data Source=LAPTOP-1NFNB131;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
     
 
         private void showdata()
@@ -67,7 +67,14 @@ namespace FPSewaMobil
 
         private void dgvpenyewa_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvpenyewa.Rows[e.RowIndex];
 
+                textboxnama.Text = row.Cells["nama_penyewa"].Value.ToString();
+                txtid.Text = row.Cells["jenis_id"].Value.ToString();
+                txtnomorid.Text = row.Cells["nomor_id"].Value.ToString();
+            }
         }
 
 

@@ -17,7 +17,7 @@ namespace FPSewaMobil
             InitializeComponent();
         }
         SqlConnection con = new SqlConnection
-            (@"Data Source=LAPTOP-44L09114\ANDRIAN;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
+            (@"Data Source=LAPTOP-1NFNB131;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
 
         private void resetdata()
         {
@@ -147,6 +147,18 @@ namespace FPSewaMobil
         private void Form_Data_Mobil_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgvdatamobil_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvdatamobil.Rows[e.RowIndex];
+
+                txtnomobil.Text = row.Cells["no_mobil"].Value.ToString();
+                txtnama.Text = row.Cells["nama_mobil"].Value.ToString();
+                txttahun.Text = row.Cells["tahun"].Value.ToString();
+            }
         }
     }
 }

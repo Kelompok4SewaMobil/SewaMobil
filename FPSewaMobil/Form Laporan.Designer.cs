@@ -32,17 +32,23 @@ namespace FPSewaMobil
             this.print = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.kembali = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // print
             // 
-            this.print.Location = new System.Drawing.Point(38, 57);
+            this.print.Location = new System.Drawing.Point(38, 82);
             this.print.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(150, 51);
+            this.print.Size = new System.Drawing.Size(159, 51);
             this.print.TabIndex = 0;
-            this.print.Text = "Tampilkan";
+            this.print.Text = "TAMPILKAN";
+            this.print.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.print.UseVisualStyleBackColor = true;
             this.print.Click += new System.EventHandler(this.print_Click);
             // 
@@ -54,19 +60,49 @@ namespace FPSewaMobil
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(603, 500);
+            this.dataGridView1.Size = new System.Drawing.Size(949, 450);
             this.dataGridView1.TabIndex = 1;
             // 
             // kembali
             // 
-            this.kembali.Location = new System.Drawing.Point(490, 57);
+            this.kembali.Location = new System.Drawing.Point(851, 615);
             this.kembali.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kembali.Name = "kembali";
-            this.kembali.Size = new System.Drawing.Size(150, 51);
+            this.kembali.Size = new System.Drawing.Size(136, 51);
             this.kembali.TabIndex = 2;
-            this.kembali.Text = "Kembali";
+            this.kembali.Text = "KEMBALI";
+            this.kembali.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.kembali.UseVisualStyleBackColor = true;
             this.kembali.Click += new System.EventHandler(this.kembali_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(255, 57);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(550, 20);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Form Laporan untuk Menampilkan Laporan dari Data yang sudah di inputkan";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::FPSewaMobil.Properties.Resources.document;
+            this.pictureBox2.Location = new System.Drawing.Point(56, 91);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::FPSewaMobil.Properties.Resources.Back;
+            this.pictureBox1.Location = new System.Drawing.Point(868, 624);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_Laporan
             // 
@@ -74,6 +110,9 @@ namespace FPSewaMobil
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1028, 694);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.kembali);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.print);
@@ -83,7 +122,10 @@ namespace FPSewaMobil
             this.Text = "Laporan";
             this.Load += new System.EventHandler(this.Form_Laporan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,5 +134,8 @@ namespace FPSewaMobil
         private System.Windows.Forms.Button print;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button kembali;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
