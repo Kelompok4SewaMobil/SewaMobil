@@ -160,6 +160,17 @@ namespace FPSewaMobil
             frm_menu.Show();
             this.Hide();
         }
+
+        private void dgvuser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvuser.Rows[e.RowIndex];
+
+                txtuser.Text = row.Cells["username"].Value.ToString();
+                txtpwd.Text = row.Cells["password"].Value.ToString();
+            }
+        }
     }
     }
     
