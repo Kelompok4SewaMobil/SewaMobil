@@ -24,16 +24,7 @@ namespace FPSewaMobil
 
         private void showdata()
         {
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select * from penyewa";
-            DataSet ds = new DataSet();
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "penyewa");
-            dgvpenyewa.DataSource = ds;
-            dgvpenyewa.DataMember = "penyewa";
-            dgvpenyewa.ReadOnly = true;
+            
 
         }
 
@@ -49,20 +40,7 @@ namespace FPSewaMobil
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            con.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = "penyewa";
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            SqlParameter idPenyewa = new SqlParameter("@id", SqlDbType.VarChar);
-
-            idPenyewa.Value = txtid.Text;
-            cmd.Parameters.Add(idPenyewa);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            showdata();
-
+         
         }
 
         private void dgvpenyewa_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -86,29 +64,7 @@ namespace FPSewaMobil
 
         private void btninsert_Click(object sender, EventArgs e)
         {
-            if (txtid.Text == "" | textboxnama.Text == "" | txtnomorid.Text == "")
-            {
-                MessageBox.Show("Semua data harus diisi", "Peringatan");
-                goto berhenti;
-            }
-            int num;
-            bool isNum = int.TryParse(txtnomorid.Text.ToString(), out num);
-            if (!isNum)
-            {
-                MessageBox.Show("Isi Nomor ID", "Peringatan");
-                goto berhenti;
-            }
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = " insert into penyewa values ('" + txtid.Text + "','" + textboxnama.Text + "'," + int.Parse(txtnomorid.Text) + ")";
-            cmd.ExecuteNonQuery();
-            con.Close();
-            showdata();
-            resetdata();
-        berhenti:;
+          
         }
 
         private void toolStripTextBox1_Click(object sender, EventArgs e)
@@ -128,52 +84,12 @@ namespace FPSewaMobil
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-            if (txtid.Text == "" | textboxnama.Text == "" | txtnomorid.Text == "")
-            {
-                MessageBox.Show("Semua Data Harus Diisi", "Peringatan");
-                goto berhenti;
-            }
-            int num;
-            bool isNum = int.TryParse(txtnomorid.Text.ToString(), out num);
-            if (!isNum)
-            {
-                MessageBox.Show("Isi Tahun Mobil", "Peringatan");
-                goto berhenti;
-            }
-            con.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = " update penyewa set jenis_id = '" + txtid.Text + "', nama_penyewa =" + textboxnama.Text + "where nomor_id = '" + txtnomorid.Text + "'";
-            cmd.ExecuteNonQuery();
-            con.Close();
-            showdata();
-            resetdata();
-
-        berhenti:
-            ;
+           
         }
 
         private void btndelete_Click_1(object sender, EventArgs e)
         {
-            if (txtid.Text == "")
-            {
-                MessageBox.Show("Isi Nama Penyewa Yang Dihapus");
-                goto berhenti;
-            }
-            con.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = " delete from penyewa where nama_penyewa = '" + txtid.Text + "'";
-            cmd.ExecuteNonQuery();
-            con.Close();
-            showdata();
-            resetdata();
-
-        berhenti:
-            ;
-
+            
 
         }
 
@@ -184,6 +100,7 @@ namespace FPSewaMobil
 
         private void btncari_Click(object sender, EventArgs e)
         {
+
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
