@@ -24,7 +24,16 @@ namespace FPSewaMobil
 
         private void showdata()
         {
-            
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from penyewa";
+            DataSet ds = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(ds, "penyewa");
+            dgvpenyewa.DataSource = ds;
+            dgvpenyewa.DataMember = "penyewa";
+            dgvpenyewa.ReadOnly = true;
 
         }
 
