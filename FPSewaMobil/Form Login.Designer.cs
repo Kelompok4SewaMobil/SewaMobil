@@ -58,6 +58,7 @@ namespace FPSewaMobil
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(200, 26);
             this.txtuser.TabIndex = 8;
+            this.txtuser.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
             // 
             // btnlogin
             // 

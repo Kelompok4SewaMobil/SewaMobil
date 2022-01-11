@@ -73,5 +73,11 @@ namespace FPSewaMobil
            
         }
 
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            Data_Pelanggan frm_menu = new Data_Pelanggan();
+            frm_menu.Show();
+            this.Hide();
+        }
     }
 }

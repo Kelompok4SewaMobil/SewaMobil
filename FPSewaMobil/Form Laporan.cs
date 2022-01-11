@@ -15,7 +15,7 @@ namespace FPSewaMobil
     public partial class Form_Laporan : Form
     {
         SqlConnection koneksi = new SqlConnection
-            (@"Data Source=LAPTOP-1NFNB131;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
+            (@"Data Source=LAPTOP-44L09114\ANDRIAN;Initial Catalog=SEWA_MOBIL;Integrated Security=True");
 
         public Form_Laporan()
         {
