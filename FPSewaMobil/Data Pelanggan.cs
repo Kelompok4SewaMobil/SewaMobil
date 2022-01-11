@@ -40,7 +40,20 @@ namespace FPSewaMobil
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-         
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "penyewa";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter idPenyewa = new SqlParameter("@id", SqlDbType.VarChar);
+
+            idPenyewa.Value = txtid.Text;
+            cmd.Parameters.Add(idPenyewa);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            showdata();
         }
 
         private void dgvpenyewa_CellContentClick(object sender, DataGridViewCellEventArgs e)
