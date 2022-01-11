@@ -80,7 +80,7 @@ namespace FPSewaMobil
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_Laporan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Laporan";
+            this.Text = "Laporan";
             this.Load += new System.EventHandler(this.Form_Laporan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

@@ -44,7 +44,7 @@ namespace FPSewaMobil
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(310, 88);
+            this.button1.Location = new System.Drawing.Point(236, 76);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 44);
             this.button1.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace FPSewaMobil
             this.Controls.Add(this.label1);
             this.Name = "Form_Transaksi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Transaksi";
+            this.Text = "Transaksi";
             this.ResumeLayout(false);
             this.PerformLayout();
 

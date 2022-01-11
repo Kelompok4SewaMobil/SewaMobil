@@ -37,7 +37,6 @@ namespace FPSewaMobil
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btncari = new System.Windows.Forms.ToolStripButton();
             this.txtcari = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -46,6 +45,7 @@ namespace FPSewaMobil
             this.btnreset = new System.Windows.Forms.Button();
             this.dgvdatamobil = new System.Windows.Forms.DataGridView();
             this.btnkembali = new System.Windows.Forms.Button();
+            this.btncari = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatamobil)).BeginInit();
             this.SuspendLayout();
@@ -115,26 +115,16 @@ namespace FPSewaMobil
             this.label1.TabIndex = 17;
             this.label1.Text = "NO.MOBIL";
             // 
-            // btncari
-            // 
-            this.btncari.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btncari.Image = ((System.Drawing.Image)(resources.GetObject("btncari.Image")));
-            this.btncari.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btncari.Name = "btncari";
-            this.btncari.Size = new System.Drawing.Size(34, 28);
-            this.btncari.Text = "toolStripButton1";
-            this.btncari.Click += new System.EventHandler(this.btncari_Click);
-            // 
             // txtcari
             // 
             this.txtcari.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtcari.Name = "txtcari";
-            this.txtcari.Size = new System.Drawing.Size(223, 33);
+            this.txtcari.Size = new System.Drawing.Size(223, 38);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(137, 28);
+            this.toolStripLabel1.Size = new System.Drawing.Size(137, 33);
             this.toolStripLabel1.Text = "Pencarian Data :";
             // 
             // toolStrip1
@@ -147,7 +137,7 @@ namespace FPSewaMobil
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1028, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 38);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -206,6 +196,16 @@ namespace FPSewaMobil
             this.btnkembali.UseVisualStyleBackColor = true;
             this.btnkembali.Click += new System.EventHandler(this.button5_Click);
             // 
+            // btncari
+            // 
+            this.btncari.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btncari.Image = ((System.Drawing.Image)(resources.GetObject("btncari.Image")));
+            this.btncari.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btncari.Name = "btncari";
+            this.btncari.Size = new System.Drawing.Size(34, 33);
+            this.btncari.Text = "toolStripButton1";
+            this.btncari.Click += new System.EventHandler(this.btncari_Click);
+            // 
             // Form_Data_Mobil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -228,7 +228,7 @@ namespace FPSewaMobil
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_Data_Mobil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form_Data_Mobil";
+            this.Text = "Mobil";
             this.Load += new System.EventHandler(this.Form_Data_Mobil_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

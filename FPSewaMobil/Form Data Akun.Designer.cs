@@ -151,7 +151,7 @@ namespace FPSewaMobil
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form Data Akun";
+            this.Text = "Akun";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvuser)).EndInit();
             this.ResumeLayout(false);

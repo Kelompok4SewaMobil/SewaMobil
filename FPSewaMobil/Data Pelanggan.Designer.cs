@@ -39,13 +39,13 @@ namespace FPSewaMobil
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.btncari = new System.Windows.Forms.ToolStripButton();
             this.btninsert = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnresetdata = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btncari = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvpenyewa)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -114,32 +114,22 @@ namespace FPSewaMobil
             this.btncari});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1028, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 38);
             this.toolStrip1.TabIndex = 11;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(173, 28);
+            this.toolStripLabel1.Size = new System.Drawing.Size(173, 33);
             this.toolStripLabel1.Text = "Pencarian Pelanggan";
             // 
             // toolStripTextBox1
             // 
             this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Size = new System.Drawing.Size(200, 33);
+            this.toolStripTextBox1.Size = new System.Drawing.Size(200, 38);
             this.toolStripTextBox1.Click += new System.EventHandler(this.toolStripTextBox1_Click);
-            // 
-            // btncari
-            // 
-            this.btncari.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btncari.Image = ((System.Drawing.Image)(resources.GetObject("btncari.Image")));
-            this.btncari.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btncari.Name = "btncari";
-            this.btncari.Size = new System.Drawing.Size(34, 28);
-            this.btncari.Text = "toolStripButton1";
-            this.btncari.Click += new System.EventHandler(this.btncari_Click);
             // 
             // btninsert
             // 
@@ -198,6 +188,16 @@ namespace FPSewaMobil
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btncari
+            // 
+            this.btncari.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btncari.Image = ((System.Drawing.Image)(resources.GetObject("btncari.Image")));
+            this.btncari.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btncari.Name = "btncari";
+            this.btncari.Size = new System.Drawing.Size(34, 33);
+            this.btncari.Text = "toolStripButton1";
+            this.btncari.Click += new System.EventHandler(this.btncari_Click);
+            // 
             // Data_Pelanggan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -219,7 +219,7 @@ namespace FPSewaMobil
             this.Controls.Add(this.label1);
             this.Name = "Data_Pelanggan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Data_Pelanggan";
+            this.Text = "Customer";
             this.Load += new System.EventHandler(this.Data_Pelanggan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvpenyewa)).EndInit();
             this.toolStrip1.ResumeLayout(false);
