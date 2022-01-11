@@ -31,7 +31,6 @@ namespace FPSewaMobil
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Utama));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
@@ -41,6 +40,7 @@ namespace FPSewaMobil
             this.aboutaplikasi = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutkelompok = new System.Windows.Forms.ToolStripMenuItem();
             this.keluar = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -60,20 +60,9 @@ namespace FPSewaMobil
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1028, 34);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 38);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 33);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1028, 663);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // toolStripButton1
             // 
@@ -81,8 +70,8 @@ namespace FPSewaMobil
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(99, 29);
-            this.toolStripButton1.Text = "Data Akun";
+            this.toolStripButton1.Size = new System.Drawing.Size(72, 33);
+            this.toolStripButton1.Text = "Setting";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // toolStripButton3
@@ -91,7 +80,7 @@ namespace FPSewaMobil
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(104, 29);
+            this.toolStripButton3.Size = new System.Drawing.Size(104, 33);
             this.toolStripButton3.Text = "Data Mobil";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -101,7 +90,7 @@ namespace FPSewaMobil
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(135, 29);
+            this.toolStripButton4.Size = new System.Drawing.Size(135, 33);
             this.toolStripButton4.Text = "Data Customer";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
@@ -111,7 +100,7 @@ namespace FPSewaMobil
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(86, 29);
+            this.toolStripButton2.Size = new System.Drawing.Size(86, 33);
             this.toolStripButton2.Text = "Transaksi";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -121,7 +110,7 @@ namespace FPSewaMobil
             this.laporan.Image = ((System.Drawing.Image)(resources.GetObject("laporan.Image")));
             this.laporan.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.laporan.Name = "laporan";
-            this.laporan.Size = new System.Drawing.Size(80, 29);
+            this.laporan.Size = new System.Drawing.Size(80, 33);
             this.laporan.Text = "Laporan";
             this.laporan.Click += new System.EventHandler(this.laporan_Click);
             // 
@@ -134,7 +123,7 @@ namespace FPSewaMobil
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(80, 29);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(80, 33);
             this.toolStripDropDownButton1.Text = "About";
             // 
             // aboutaplikasi
@@ -157,9 +146,20 @@ namespace FPSewaMobil
             this.keluar.Image = ((System.Drawing.Image)(resources.GetObject("keluar.Image")));
             this.keluar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.keluar.Name = "keluar";
-            this.keluar.Size = new System.Drawing.Size(64, 29);
+            this.keluar.Size = new System.Drawing.Size(64, 33);
             this.keluar.Text = "Keluar";
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 33);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1028, 663);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_Utama
             // 
