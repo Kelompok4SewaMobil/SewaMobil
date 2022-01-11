@@ -43,7 +43,9 @@ namespace FPSewaMobil
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-
+            Form_Transaksi frm_menu = new Form_Transaksi();
+            frm_menu.Show();
+            this.Hide();
         }
 
         private void toolStripButton3_Click(object sender, EventArgs e)

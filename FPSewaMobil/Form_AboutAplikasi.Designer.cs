@@ -38,26 +38,30 @@ namespace FPSewaMobil
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 13);
+            this.groupBox1.Location = new System.Drawing.Point(20, 20);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(436, 379);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(654, 583);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 8);
+            this.label1.Location = new System.Drawing.Point(10, 12);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 13);
+            this.label1.Size = new System.Drawing.Size(132, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Deskripsi Aplikasi";
             // 
             // aboutkembali1
             // 
-            this.aboutkembali1.Location = new System.Drawing.Point(319, 399);
+            this.aboutkembali1.Location = new System.Drawing.Point(478, 614);
+            this.aboutkembali1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.aboutkembali1.Name = "aboutkembali1";
-            this.aboutkembali1.Size = new System.Drawing.Size(129, 39);
+            this.aboutkembali1.Size = new System.Drawing.Size(194, 60);
             this.aboutkembali1.TabIndex = 1;
             this.aboutkembali1.Text = "Kembali";
             this.aboutkembali1.UseVisualStyleBackColor = true;
@@ -65,12 +69,14 @@ namespace FPSewaMobil
             // 
             // Form_AboutAplikasi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 450);
+            this.ClientSize = new System.Drawing.Size(1028, 694);
             this.Controls.Add(this.aboutkembali1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_AboutAplikasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AboutAplikasi";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

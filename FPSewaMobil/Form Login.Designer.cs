@@ -40,27 +40,30 @@ namespace FPSewaMobil
             // 
             // txtpwd
             // 
-            this.txtpwd.Location = new System.Drawing.Point(666, 416);
+            this.txtpwd.Location = new System.Drawing.Point(661, 411);
+            this.txtpwd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtpwd.Name = "txtpwd";
             this.txtpwd.PasswordChar = '*';
-            this.txtpwd.Size = new System.Drawing.Size(298, 22);
+            this.txtpwd.Size = new System.Drawing.Size(297, 26);
             this.txtpwd.TabIndex = 9;
             this.txtpwd.TextChanged += new System.EventHandler(this.txtpwd_TextChanged);
             // 
             // txtuser
             // 
-            this.txtuser.Location = new System.Drawing.Point(666, 327);
+            this.txtuser.Location = new System.Drawing.Point(661, 314);
+            this.txtuser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(298, 22);
+            this.txtuser.Size = new System.Drawing.Size(297, 26);
             this.txtuser.TabIndex = 8;
             this.txtuser.TextChanged += new System.EventHandler(this.txtuser_TextChanged);
             // 
             // btnlogin
             // 
             this.btnlogin.Image = ((System.Drawing.Image)(resources.GetObject("btnlogin.Image")));
-            this.btnlogin.Location = new System.Drawing.Point(724, 469);
+            this.btnlogin.Location = new System.Drawing.Point(713, 466);
+            this.btnlogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(178, 33);
+            this.btnlogin.Size = new System.Drawing.Size(200, 41);
             this.btnlogin.TabIndex = 7;
             this.btnlogin.UseVisualStyleBackColor = true;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
@@ -68,9 +71,10 @@ namespace FPSewaMobil
             // keluar
             // 
             this.keluar.Image = ((System.Drawing.Image)(resources.GetObject("keluar.Image")));
-            this.keluar.Location = new System.Drawing.Point(724, 524);
+            this.keluar.Location = new System.Drawing.Point(713, 519);
+            this.keluar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.keluar.Name = "keluar";
-            this.keluar.Size = new System.Drawing.Size(178, 34);
+            this.keluar.Size = new System.Drawing.Size(200, 42);
             this.keluar.TabIndex = 10;
             this.keluar.UseVisualStyleBackColor = true;
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
@@ -78,26 +82,29 @@ namespace FPSewaMobil
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1035, 701);
+            this.pictureBox1.Size = new System.Drawing.Size(1027, 692);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // Form_Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1032, 703);
+            this.ClientSize = new System.Drawing.Size(1028, 694);
             this.Controls.Add(this.keluar);
             this.Controls.Add(this.txtpwd);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form_Login";
-            this.Text = "Form_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form_Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -45,6 +45,7 @@ namespace FPSewaMobil
             this.btndelete = new System.Windows.Forms.Button();
             this.btnresetdata = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvpenyewa)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +87,7 @@ namespace FPSewaMobil
             // 
             // dgvpenyewa
             // 
+            this.dgvpenyewa.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvpenyewa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvpenyewa.Location = new System.Drawing.Point(86, 261);
             this.dgvpenyewa.Name = "dgvpenyewa";
@@ -112,7 +114,7 @@ namespace FPSewaMobil
             this.btncari});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(871, 33);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 33);
             this.toolStrip1.TabIndex = 11;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -186,11 +188,23 @@ namespace FPSewaMobil
             this.txtid.Size = new System.Drawing.Size(187, 26);
             this.txtid.TabIndex = 16;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(676, 550);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 36);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "KEMBALI";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Data_Pelanggan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(871, 560);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(1028, 694);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtid);
             this.Controls.Add(this.btnresetdata);
             this.Controls.Add(this.btndelete);
@@ -204,6 +218,7 @@ namespace FPSewaMobil
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Data_Pelanggan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Data_Pelanggan";
             this.Load += new System.EventHandler(this.Data_Pelanggan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvpenyewa)).EndInit();
@@ -231,5 +246,6 @@ namespace FPSewaMobil
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnresetdata;
         private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.Button button1;
     }
 }

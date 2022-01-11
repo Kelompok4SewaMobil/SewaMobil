@@ -121,7 +121,7 @@ namespace FPSewaMobil
             this.btncari.Image = ((System.Drawing.Image)(resources.GetObject("btncari.Image")));
             this.btncari.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btncari.Name = "btncari";
-            this.btncari.Size = new System.Drawing.Size(34, 33);
+            this.btncari.Size = new System.Drawing.Size(34, 28);
             this.btncari.Text = "toolStripButton1";
             this.btncari.Click += new System.EventHandler(this.btncari_Click);
             // 
@@ -129,12 +129,12 @@ namespace FPSewaMobil
             // 
             this.txtcari.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtcari.Name = "txtcari";
-            this.txtcari.Size = new System.Drawing.Size(223, 38);
+            this.txtcari.Size = new System.Drawing.Size(223, 33);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(137, 33);
+            this.toolStripLabel1.Size = new System.Drawing.Size(137, 28);
             this.toolStripLabel1.Text = "Pencarian Data :";
             // 
             // toolStrip1
@@ -147,7 +147,7 @@ namespace FPSewaMobil
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(684, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 33);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -186,6 +186,7 @@ namespace FPSewaMobil
             // 
             // dgvdatamobil
             // 
+            this.dgvdatamobil.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvdatamobil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdatamobil.Location = new System.Drawing.Point(18, 305);
             this.dgvdatamobil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -209,7 +210,8 @@ namespace FPSewaMobil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 708);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(1028, 694);
             this.Controls.Add(this.btnkembali);
             this.Controls.Add(this.dgvdatamobil);
             this.Controls.Add(this.btnreset);
@@ -225,6 +227,7 @@ namespace FPSewaMobil
             this.Controls.Add(this.toolStrip1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_Data_Mobil";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Data_Mobil";
             this.Load += new System.EventHandler(this.Form_Data_Mobil_Load);
             this.toolStrip1.ResumeLayout(false);

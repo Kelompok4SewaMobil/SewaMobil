@@ -118,6 +118,9 @@
     <EmbeddedResource Include="Form Login.resx">
       <DependentUpon>Form Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form Transaksi.resx">
+      <DependentUpon>Form Transaksi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form Utama.resx">
       <DependentUpon>Form Utama.cs</DependentUpon>
     </EmbeddedResource>

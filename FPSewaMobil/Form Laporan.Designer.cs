@@ -37,9 +37,10 @@ namespace FPSewaMobil
             // 
             // print
             // 
-            this.print.Location = new System.Drawing.Point(25, 37);
+            this.print.Location = new System.Drawing.Point(38, 57);
+            this.print.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(100, 33);
+            this.print.Size = new System.Drawing.Size(150, 51);
             this.print.TabIndex = 0;
             this.print.Text = "Tampilkan";
             this.print.UseVisualStyleBackColor = true;
@@ -47,17 +48,21 @@ namespace FPSewaMobil
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 93);
+            this.dataGridView1.Location = new System.Drawing.Point(38, 143);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(402, 325);
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(603, 500);
             this.dataGridView1.TabIndex = 1;
             // 
             // kembali
             // 
-            this.kembali.Location = new System.Drawing.Point(327, 37);
+            this.kembali.Location = new System.Drawing.Point(490, 57);
+            this.kembali.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.kembali.Name = "kembali";
-            this.kembali.Size = new System.Drawing.Size(100, 33);
+            this.kembali.Size = new System.Drawing.Size(150, 51);
             this.kembali.TabIndex = 2;
             this.kembali.Text = "Kembali";
             this.kembali.UseVisualStyleBackColor = true;
@@ -65,13 +70,16 @@ namespace FPSewaMobil
             // 
             // Form_Laporan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 450);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(1028, 694);
             this.Controls.Add(this.kembali);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.print);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form_Laporan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Laporan";
             this.Load += new System.EventHandler(this.Form_Laporan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
