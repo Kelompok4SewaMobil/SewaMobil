@@ -35,15 +35,16 @@ namespace FPSewaMobil
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtno = new System.Windows.Forms.TextBox();
+            this.txttgl = new System.Windows.Forms.TextBox();
+            this.txtidcust = new System.Windows.Forms.TextBox();
+            this.txtharga = new System.Windows.Forms.TextBox();
+            this.btnok = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.cbmobil = new System.Windows.Forms.ComboBox();
+            this.txtnomormobil = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,50 +105,44 @@ namespace FPSewaMobil
             this.label5.TabIndex = 7;
             this.label5.Text = "Harga Sewa";
             // 
-            // textBox1
+            // txtno
             // 
-            this.textBox1.Location = new System.Drawing.Point(427, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 26);
-            this.textBox1.TabIndex = 8;
+            this.txtno.Location = new System.Drawing.Point(427, 194);
+            this.txtno.Name = "txtno";
+            this.txtno.Size = new System.Drawing.Size(334, 26);
+            this.txtno.TabIndex = 8;
             // 
-            // textBox2
+            // txttgl
             // 
-            this.textBox2.Location = new System.Drawing.Point(427, 243);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(334, 26);
-            this.textBox2.TabIndex = 9;
+            this.txttgl.Location = new System.Drawing.Point(427, 243);
+            this.txttgl.Name = "txttgl";
+            this.txttgl.Size = new System.Drawing.Size(334, 26);
+            this.txttgl.TabIndex = 9;
             // 
-            // textBox3
+            // txtidcust
             // 
-            this.textBox3.Location = new System.Drawing.Point(427, 294);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(334, 26);
-            this.textBox3.TabIndex = 10;
+            this.txtidcust.Location = new System.Drawing.Point(427, 294);
+            this.txtidcust.Name = "txtidcust";
+            this.txtidcust.Size = new System.Drawing.Size(334, 26);
+            this.txtidcust.TabIndex = 10;
             // 
-            // textBox4
+            // txtharga
             // 
-            this.textBox4.Location = new System.Drawing.Point(427, 352);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(334, 26);
-            this.textBox4.TabIndex = 11;
+            this.txtharga.Location = new System.Drawing.Point(427, 406);
+            this.txtharga.Name = "txtharga";
+            this.txtharga.Size = new System.Drawing.Size(334, 26);
+            this.txtharga.TabIndex = 12;
             // 
-            // textBox5
+            // btnok
             // 
-            this.textBox5.Location = new System.Drawing.Point(427, 406);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(334, 26);
-            this.textBox5.TabIndex = 12;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(665, 487);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 54);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "OK";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnok.Location = new System.Drawing.Point(665, 487);
+            this.btnok.Name = "btnok";
+            this.btnok.Size = new System.Drawing.Size(96, 54);
+            this.btnok.TabIndex = 13;
+            this.btnok.Text = "OK";
+            this.btnok.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnok.UseVisualStyleBackColor = true;
+            this.btnok.Click += new System.EventHandler(this.btnok_Click);
             // 
             // pictureBox2
             // 
@@ -178,20 +173,37 @@ namespace FPSewaMobil
             this.label6.TabIndex = 15;
             this.label6.Text = "Form untuk mencatat Transaksi pada penyewaan Mobil";
             // 
+            // cbmobil
+            // 
+            this.cbmobil.FormattingEnabled = true;
+            this.cbmobil.Location = new System.Drawing.Point(427, 352);
+            this.cbmobil.Name = "cbmobil";
+            this.cbmobil.Size = new System.Drawing.Size(200, 28);
+            this.cbmobil.TabIndex = 16;
+            this.cbmobil.SelectedIndexChanged += new System.EventHandler(this.cbmobil_SelectedIndexChanged);
+            // 
+            // txtnomormobil
+            // 
+            this.txtnomormobil.Location = new System.Drawing.Point(633, 352);
+            this.txtnomormobil.Name = "txtnomormobil";
+            this.txtnomormobil.Size = new System.Drawing.Size(128, 26);
+            this.txtnomormobil.TabIndex = 17;
+            // 
             // Form_Transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1028, 694);
+            this.Controls.Add(this.txtnomormobil);
+            this.Controls.Add(this.cbmobil);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnok);
+            this.Controls.Add(this.txtharga);
+            this.Controls.Add(this.txtidcust);
+            this.Controls.Add(this.txttgl);
+            this.Controls.Add(this.txtno);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -202,6 +214,7 @@ namespace FPSewaMobil
             this.Name = "Form_Transaksi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Transaksi";
+            this.Load += new System.EventHandler(this.Form_Transaksi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -217,13 +230,14 @@ namespace FPSewaMobil
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtno;
+        private System.Windows.Forms.TextBox txttgl;
+        private System.Windows.Forms.TextBox txtidcust;
+        private System.Windows.Forms.TextBox txtharga;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnok;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbmobil;
+        private System.Windows.Forms.TextBox txtnomormobil;
     }
 }
