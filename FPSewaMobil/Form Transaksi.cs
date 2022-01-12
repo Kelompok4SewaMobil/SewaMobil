@@ -45,7 +45,9 @@ namespace FPSewaMobil
 
         private void Form_Transaksi_Load(object sender, EventArgs e)
         {
-
+            txtno.Text = notrans;
+            isicombo();
+            txttgl.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void btnok_Click(object sender, EventArgs e)
