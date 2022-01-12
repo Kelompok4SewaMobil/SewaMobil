@@ -96,14 +96,14 @@ namespace FPSewaMobil
 
             if (textboxnama.Text == "" | txtid.Text == "" | txtnomorid.Text == "")
             {
-                MessageBox.Show("Semua data harus diisi", "Peringatan");
+                MessageBox.Show("Semua data harus diisi", "PERINGATAN");
                 goto berhenti;
             }
             int num;
             bool isNum = int.TryParse(txtnomorid.Text.ToString(), out num);
             if (!isNum)
             {
-                MessageBox.Show("Isi Nomor ID", "Peringatan");
+                MessageBox.Show("Mohon Isi Nomor ID", "PERINGATAN");
                 goto berhenti;
             }
             con.Open();
@@ -140,14 +140,14 @@ namespace FPSewaMobil
 
             if (textboxnama.Text == "" | txtid.Text == "" | txtnomorid.Text == "")
             {
-                MessageBox.Show("Semua Data Harus Diisi", "Peringatan");
+                MessageBox.Show("Semua Data Harus Diisi", "PERINGATAN");
                 goto berhenti;
             }
             int num;
             bool isNum = int.TryParse(txtnomorid.Text.ToString(), out num);
             if (!isNum)
             {
-                MessageBox.Show("Isi Nomor ID", "Peringatan");
+                MessageBox.Show("Mohon Isi Nomor ID", "PERINGATAN");
                 goto berhenti;
             }
             con.Open();
@@ -169,7 +169,7 @@ namespace FPSewaMobil
         {
             if (txtid.Text == "")
             {
-                MessageBox.Show("Isi Nama Penyewa Yang Dihapus");
+                MessageBox.Show("Isi Nama Penyewa Yang Dihapus", "PERINGATAN");
                 goto berhenti;
             }
             con.Open();

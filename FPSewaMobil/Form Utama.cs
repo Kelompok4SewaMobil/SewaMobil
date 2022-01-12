@@ -19,7 +19,7 @@ namespace FPSewaMobil
 
         private void keluar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Yakin akan keluar?","Exit",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show("Apakah anda yakin ingin keluar?","Keluar",MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 Form_Login frm_menu = new Form_Login();
                 frm_menu.Show();

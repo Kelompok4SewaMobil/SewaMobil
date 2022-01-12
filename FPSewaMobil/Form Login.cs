@@ -62,7 +62,7 @@ namespace FPSewaMobil
             {
                 if (txtuser.Text == "" | txtpwd.Text == "")
                 {
-                    MessageBox.Show("Semua data harus diisi", "PERINGATAN");
+                    MessageBox.Show("Username atau Password belum diisi!", "PERINGATAN");
                     goto berhenti;
                 }
                 string tekscipher = null;
@@ -82,7 +82,7 @@ namespace FPSewaMobil
                 }
                 else
                 {
-                    MessageBox.Show("username atau password tidak valid", "PERINGATAN");
+                    MessageBox.Show("Username atau Password tidak Valid!", "PERINGATAN");
                     txtuser.Text = "";
                     txtuser.Focus();
                     txtpwd.Text = "";
@@ -106,7 +106,11 @@ namespace FPSewaMobil
 
         private void keluar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            if (MessageBox.Show("Apakah anda ingin keluar Aplikasi?", "Keluar", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+                
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
