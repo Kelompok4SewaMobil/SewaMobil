@@ -39,6 +39,7 @@ namespace FPSewaMobil
             this.txtcari = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btncari = new System.Windows.Forms.ToolStripButton();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnreset = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@ namespace FPSewaMobil
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btncari = new System.Windows.Forms.ToolStripButton();
             this.label4 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdatamobil)).BeginInit();
@@ -63,7 +63,7 @@ namespace FPSewaMobil
             // btninsert
             // 
             this.btninsert.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btninsert.Location = new System.Drawing.Point(220, 270);
+            this.btninsert.Location = new System.Drawing.Point(228, 316);
             this.btninsert.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btninsert.Name = "btninsert";
             this.btninsert.Size = new System.Drawing.Size(121, 43);
@@ -149,13 +149,23 @@ namespace FPSewaMobil
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1028, 38);
+            this.toolStrip1.Size = new System.Drawing.Size(1028, 33);
             this.toolStrip1.TabIndex = 16;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // btncari
+            // 
+            this.btncari.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btncari.Image = global::FPSewaMobil.Properties.Resources.search;
+            this.btncari.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btncari.Name = "btncari";
+            this.btncari.Size = new System.Drawing.Size(34, 28);
+            this.btncari.Text = "toolStripButton1";
+            this.btncari.Click += new System.EventHandler(this.btncari_Click);
+            // 
             // btnupdate
             // 
-            this.btnupdate.Location = new System.Drawing.Point(379, 270);
+            this.btnupdate.Location = new System.Drawing.Point(387, 316);
             this.btnupdate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(112, 43);
@@ -167,7 +177,7 @@ namespace FPSewaMobil
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(534, 270);
+            this.btndelete.Location = new System.Drawing.Point(542, 316);
             this.btndelete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(119, 43);
@@ -179,7 +189,7 @@ namespace FPSewaMobil
             // 
             // btnreset
             // 
-            this.btnreset.Location = new System.Drawing.Point(692, 270);
+            this.btnreset.Location = new System.Drawing.Point(700, 316);
             this.btnreset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnreset.Name = "btnreset";
             this.btnreset.Size = new System.Drawing.Size(160, 43);
@@ -193,11 +203,11 @@ namespace FPSewaMobil
             // 
             this.dgvdatamobil.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dgvdatamobil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvdatamobil.Location = new System.Drawing.Point(216, 333);
+            this.dgvdatamobil.Location = new System.Drawing.Point(216, 380);
             this.dgvdatamobil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvdatamobil.Name = "dgvdatamobil";
             this.dgvdatamobil.RowHeadersWidth = 62;
-            this.dgvdatamobil.Size = new System.Drawing.Size(644, 289);
+            this.dgvdatamobil.Size = new System.Drawing.Size(644, 242);
             this.dgvdatamobil.TabIndex = 31;
             this.dgvdatamobil.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdatamobil_CellContentClick);
             // 
@@ -226,7 +236,7 @@ namespace FPSewaMobil
             // pictureBox4
             // 
             this.pictureBox4.Image = global::FPSewaMobil.Properties.Resources.share;
-            this.pictureBox4.Location = new System.Drawing.Point(702, 276);
+            this.pictureBox4.Location = new System.Drawing.Point(710, 322);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 30);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,7 +246,7 @@ namespace FPSewaMobil
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FPSewaMobil.Properties.Resources.write;
-            this.pictureBox2.Location = new System.Drawing.Point(397, 276);
+            this.pictureBox2.Location = new System.Drawing.Point(405, 322);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -246,7 +256,7 @@ namespace FPSewaMobil
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FPSewaMobil.Properties.Resources.cancel;
-            this.pictureBox1.Location = new System.Drawing.Point(545, 276);
+            this.pictureBox1.Location = new System.Drawing.Point(553, 322);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,22 +266,12 @@ namespace FPSewaMobil
             // pictureBox3
             // 
             this.pictureBox3.Image = global::FPSewaMobil.Properties.Resources.document__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(230, 276);
+            this.pictureBox3.Location = new System.Drawing.Point(238, 322);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 30);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
-            // 
-            // btncari
-            // 
-            this.btncari.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btncari.Image = global::FPSewaMobil.Properties.Resources.search;
-            this.btncari.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btncari.Name = "btncari";
-            this.btncari.Size = new System.Drawing.Size(34, 28);
-            this.btncari.Text = "toolStripButton1";
-            this.btncari.Click += new System.EventHandler(this.btncari_Click);
             // 
             // label4
             // 

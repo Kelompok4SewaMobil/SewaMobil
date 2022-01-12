@@ -33,12 +33,12 @@ namespace FPSewaMobil
             get
             {
                 con.Open();
-                string nomor = "TR-001";
+                string nomor = "SW-001";
                 SqlCommand cmd = new SqlCommand("select max(right(no_transaksi,4)) from transaksimobil", con);
                 SqlDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 if (rd[0].ToString() != "")
-                    nomor = "TR-" + (int.Parse(rd[0].ToString()) + 1).ToString("0000");
+                    nomor = "SW-" + (int.Parse(rd[0].ToString()) + 1).ToString("0000");
                 rd.Close();
                 return nomor;
             }
@@ -63,8 +63,7 @@ namespace FPSewaMobil
             txtno.Text = notrans;
             txtidcust.Text = "";
             cbmobil.Text = "";
-            txtharga.Text = "";
-            txtharga.Text = "";
+            txttahun.Text = "";
             txtnomormobil.Text = "";
         }
 
@@ -77,15 +76,15 @@ namespace FPSewaMobil
 
         private void btnok_Click(object sender, EventArgs e)
         {
-            if (txtharga.Text == "")
+            if (txttahun.Text == "")
             {
-                MessageBox.Show("Harga Sewa Mobil Harus diisi!");
+                MessageBox.Show("Data harap diisi!");
                 goto berhenti;
             }
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "insert into transaksimobil values('" + txtno.Text + "','" + txttgl.Text + "','" + txtidcust.Text + "','" + txtharga.Text + "')";
+            cmd.CommandText = "insert into transaksimobil values('" + txtno.Text + "','" + txttgl.Text + "','" + txtidcust.Text + "','" + txttahun.Text + "')";
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();
 
@@ -112,7 +111,7 @@ namespace FPSewaMobil
             {
                 rd.Read();
                 txtnomormobil.Text = rd[0].ToString();
-                txtharga.Text = rd[2].ToString();
+                txttahun.Text = rd[2].ToString();
                 rd.Close();
             }
         }

@@ -37,21 +37,22 @@ namespace FPSewaMobil
             this.label5 = new System.Windows.Forms.Label();
             this.txtno = new System.Windows.Forms.TextBox();
             this.txttgl = new System.Windows.Forms.TextBox();
-            this.txtidcust = new System.Windows.Forms.TextBox();
-            this.txtharga = new System.Windows.Forms.TextBox();
+            this.txttahun = new System.Windows.Forms.TextBox();
             this.btnok = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cbmobil = new System.Windows.Forms.ComboBox();
             this.txtnomormobil = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtidcust = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(510, 487);
+            this.button1.Location = new System.Drawing.Point(484, 487);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(136, 54);
             this.button1.TabIndex = 1;
@@ -101,9 +102,9 @@ namespace FPSewaMobil
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(279, 406);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 20);
+            this.label5.Size = new System.Drawing.Size(54, 20);
             this.label5.TabIndex = 7;
-            this.label5.Text = "Harga Sewa";
+            this.label5.Text = "Tahun";
             // 
             // txtno
             // 
@@ -119,27 +120,20 @@ namespace FPSewaMobil
             this.txttgl.Size = new System.Drawing.Size(334, 26);
             this.txttgl.TabIndex = 9;
             // 
-            // txtidcust
+            // txttahun
             // 
-            this.txtidcust.Location = new System.Drawing.Point(427, 294);
-            this.txtidcust.Name = "txtidcust";
-            this.txtidcust.Size = new System.Drawing.Size(334, 26);
-            this.txtidcust.TabIndex = 10;
-            // 
-            // txtharga
-            // 
-            this.txtharga.Location = new System.Drawing.Point(427, 406);
-            this.txtharga.Name = "txtharga";
-            this.txtharga.Size = new System.Drawing.Size(334, 26);
-            this.txtharga.TabIndex = 12;
+            this.txttahun.Location = new System.Drawing.Point(427, 406);
+            this.txttahun.Name = "txttahun";
+            this.txttahun.Size = new System.Drawing.Size(334, 26);
+            this.txttahun.TabIndex = 12;
             // 
             // btnok
             // 
-            this.btnok.Location = new System.Drawing.Point(665, 487);
+            this.btnok.Location = new System.Drawing.Point(634, 487);
             this.btnok.Name = "btnok";
-            this.btnok.Size = new System.Drawing.Size(96, 54);
+            this.btnok.Size = new System.Drawing.Size(127, 54);
             this.btnok.TabIndex = 13;
-            this.btnok.Text = "OK";
+            this.btnok.Text = "SIMPAN";
             this.btnok.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnok.UseVisualStyleBackColor = true;
             this.btnok.Click += new System.EventHandler(this.btnok_Click);
@@ -147,7 +141,7 @@ namespace FPSewaMobil
             // pictureBox2
             // 
             this.pictureBox2.Image = global::FPSewaMobil.Properties.Resources.icons8_add_48;
-            this.pictureBox2.Location = new System.Drawing.Point(680, 498);
+            this.pictureBox2.Location = new System.Drawing.Point(648, 498);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -157,7 +151,7 @@ namespace FPSewaMobil
             // pictureBox1
             // 
             this.pictureBox1.Image = global::FPSewaMobil.Properties.Resources.Back;
-            this.pictureBox1.Location = new System.Drawing.Point(525, 498);
+            this.pictureBox1.Location = new System.Drawing.Point(499, 498);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(33, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,16 +172,32 @@ namespace FPSewaMobil
             this.cbmobil.FormattingEnabled = true;
             this.cbmobil.Location = new System.Drawing.Point(427, 352);
             this.cbmobil.Name = "cbmobil";
-            this.cbmobil.Size = new System.Drawing.Size(200, 28);
+            this.cbmobil.Size = new System.Drawing.Size(172, 28);
             this.cbmobil.TabIndex = 16;
             this.cbmobil.SelectedIndexChanged += new System.EventHandler(this.cbmobil_SelectedIndexChanged);
             // 
             // txtnomormobil
             // 
-            this.txtnomormobil.Location = new System.Drawing.Point(633, 352);
+            this.txtnomormobil.Location = new System.Drawing.Point(652, 352);
             this.txtnomormobil.Name = "txtnomormobil";
-            this.txtnomormobil.Size = new System.Drawing.Size(128, 26);
+            this.txtnomormobil.Size = new System.Drawing.Size(109, 26);
             this.txtnomormobil.TabIndex = 17;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(612, 352);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 20);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "No";
+            // 
+            // txtidcust
+            // 
+            this.txtidcust.Location = new System.Drawing.Point(427, 294);
+            this.txtidcust.Name = "txtidcust";
+            this.txtidcust.Size = new System.Drawing.Size(334, 26);
+            this.txtidcust.TabIndex = 19;
             // 
             // Form_Transaksi
             // 
@@ -195,13 +205,14 @@ namespace FPSewaMobil
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(1028, 694);
+            this.Controls.Add(this.txtidcust);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtnomormobil);
             this.Controls.Add(this.cbmobil);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnok);
-            this.Controls.Add(this.txtharga);
-            this.Controls.Add(this.txtidcust);
+            this.Controls.Add(this.txttahun);
             this.Controls.Add(this.txttgl);
             this.Controls.Add(this.txtno);
             this.Controls.Add(this.label5);
@@ -232,12 +243,13 @@ namespace FPSewaMobil
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtno;
         private System.Windows.Forms.TextBox txttgl;
-        private System.Windows.Forms.TextBox txtidcust;
-        private System.Windows.Forms.TextBox txtharga;
+        private System.Windows.Forms.TextBox txttahun;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnok;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbmobil;
         private System.Windows.Forms.TextBox txtnomormobil;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtidcust;
     }
 }
