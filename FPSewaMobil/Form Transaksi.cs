@@ -34,7 +34,7 @@ namespace FPSewaMobil
             {
                 con.Open();
                 string nomor = "TR-001";
-                SqlCommand cmd = new SqlCommand("select max(right(idTransaksi,4)) from transaksi", con);
+                SqlCommand cmd = new SqlCommand("select max(right(no_transaksi,4)) from transaksimobil", con);
                 SqlDataReader rd = cmd.ExecuteReader();
                 rd.Read();
                 if (rd[0].ToString() != "")
@@ -49,12 +49,12 @@ namespace FPSewaMobil
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select namaMenu form menu";
+            cmd.CommandText = "select nama_mobil from mobil";
             DataSet ds1 = new DataSet();
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            sda.Fill(ds1, "menu");
-            cbmobil.DataSource = ds1.Tables["menu"];
-            cbmobil.DisplayMember = "namaMenu";
+            sda.Fill(ds1, "mobil");
+            cbmobil.DataSource = ds1.Tables["mobil"];
+            cbmobil.DisplayMember = "nama_mobil";
         }
 
         private void resetdata()
@@ -85,13 +85,13 @@ namespace FPSewaMobil
 
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "insert into transaksi values('" + txtno.Text + "','" + txttgl.Text + "','" + txtidcust.Text + "','" + txtharga.Text + "')";
+            cmd.CommandText = "insert into transaksimobil values('" + txtno.Text + "','" + txttgl.Text + "','" + txtidcust.Text + "','" + txtharga.Text + "')";
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();
 
             SqlCommand cmd2 = new SqlCommand();
             cmd2.Connection = con;
-            cmd2.CommandText = "insert into detailTransaksi values('" + txtno.Text + "','" + txtnomormobil.Text + "')";
+            cmd2.CommandText = "insert into detailtransaksimobil values('" + txtno.Text + "','" + txtnomormobil.Text + "')";
             cmd2.CommandType = CommandType.Text;
             cmd2.ExecuteNonQuery();
 
@@ -105,7 +105,7 @@ namespace FPSewaMobil
         private void cbmobil_SelectedIndexChanged(object sender, EventArgs e)
         {
             con.Close();
-            SqlCommand cmd = new SqlCommand("select * from menu where namaMenu='" + cbmobil.Text + "'", con);
+            SqlCommand cmd = new SqlCommand("select * from mobil where nama_mobil='" + cbmobil.Text + "'", con);
             con.Open();
             SqlDataReader rd = cmd.ExecuteReader();
             if (rd.HasRows)
