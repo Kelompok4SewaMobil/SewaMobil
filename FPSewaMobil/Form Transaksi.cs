@@ -50,7 +50,29 @@ namespace FPSewaMobil
 
         private void btnok_Click(object sender, EventArgs e)
         {
+            if (txtharga.Text == "")
+            {
+                MessageBox.Show("Harga Sewa Mobil Harus diisi!");
+                goto berhenti;
+            }
 
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "insert into transaksi values('" + txtno.Text + "','" + txttgl.Text + "','" + txtidcust.Text + "','" + txtharga.Text + "')";
+            cmd.CommandType = CommandType.Text;
+            cmd.ExecuteNonQuery();
+
+            SqlCommand cmd2 = new SqlCommand();
+            cmd2.Connection = con;
+            cmd2.CommandText = "insert into detailTransaksi values('" + txtno.Text + "','" + txtnomormobil.Text + "')";
+            cmd2.CommandType = CommandType.Text;
+            cmd2.ExecuteNonQuery();
+
+            resetdata();
+            txtidcust.Focus();
+
+        berhenti:
+            ;
         }
 
         private void cbmobil_SelectedIndexChanged(object sender, EventArgs e)
