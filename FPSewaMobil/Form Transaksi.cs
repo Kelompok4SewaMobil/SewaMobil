@@ -35,12 +35,26 @@ namespace FPSewaMobil
 
         private void isicombo()
         {
-
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select namaMenu form menu";
+            DataSet ds1 = new DataSet();
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            sda.Fill(ds1, "menu");
+            cbmobil.DataSource = ds1.Tables["menu"];
+            cbmobil.DisplayMember = "namaMenu";
         }
 
         private void resetdata()
         {
-
+            con.Close();
+            txtno.Text = notrans;
+            txtidcust.Text = "";
+            cbmobil.Text = "";
+            txtharga.Text = "";
+            txtharga.Text = "";
+            txtnomormobil.Text = "";
         }
 
         private void Form_Transaksi_Load(object sender, EventArgs e)
