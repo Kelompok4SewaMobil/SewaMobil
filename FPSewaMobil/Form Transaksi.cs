@@ -30,7 +30,18 @@ namespace FPSewaMobil
 
         private string notrans
         {
-
+            get
+            {
+                con.Open();
+                string nomor = "TR-001";
+                SqlCommand cmd = new SqlCommand("select max(right(idTransaksi,4)) from transaksi", con);
+                SqlDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                if (rd[0].ToString() != "")
+                    nomor = "TR-" + (int.Parse(rd[0].ToString()) + 1).ToString("0000");
+                rd.Close();
+                return nomor;
+            }
         }
 
         private void isicombo()
